@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ /* общие стили start*/
+  body {
+    font-family: 'Roboto' ,sans-serif;
+    background-color:#1C1C1C;
+    color: #fff;
+  }
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color:#fff;
+  }
+  .button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    background: #f6762c;
+    border-radius: 5px;
+    width:165px;
+    height:50px;
+    transition: opacity 0.3s;
+  }
+  .button:hover{
+    opacity:0.8;
+  }
+  .wrapper{
+max-width: 1140px;
+margin: 0 auto;
+padding: 0 15px;
+  }
+img{
+    max-width: 100%;
+}
+  /* общие стили end*/
+  /*header start*/
+.header{
+    padding-top: 25px;
+}
+.header__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px
+}
+.header__nav a{
+    font-size: 14px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+.header__nav a.active{
+    font-size: 14px;
+    opacity: 1;
+}
+.header__nav a:hover{
+    opacity:0.9;
+}
+.header .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+   /*header end*/
+   /*main start*/
+ .welcome{
+    box-sizing: border-box;
+    min-height:100vh;
+   margin-top: -100px;
+    padding:240px 0;
+    background-image:url("../img/welcome-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 40px;
+ }
+.welcome__subtitle{
+    font-size:14px;
+    letter-spacing:0.1em;
+    margin-bottom:7px;
+}
+.welcome__title{
+    font-weight: 500;
+    font-size:58px;
+    width:550px
+}
+.welcome__description{
+    margin:40px 0;
+    font-size: 18px;
+    opacity: 0.7;
+    width:550px
+}
+   /*main end*/
+   /*benefits start*/
+   .benefits{
+    padding: 100px;
+   }
+   .benefits .wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+   }
+.cards__card{
+    background-color: #312F30;
+    border-radius: 10px;
+    width:262px;
+    height:320px;
+    text-align: center;
+overflow: hidden;
+}
+
+
+.cards__card-name{
+    font-size: 20px;
+   
+
+}
+.cards__card-desc{
+    font-size: 16px;
+    opacity: 0.7;
+    margin-top: 13px;
+}
+.cards__wrapper{
+    padding:30px 20px ;
+}
+
+    /*benefits end*/
+    /*mega burger start*/
+.add{
+    background-color: #312F30;
+    height: 540px;
+    margin-bottom: 150px;
+    display: flex;
+    
+}
+.add .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin:0 auto;
+   width: 1050px;
+}
+.add__text{
+    width: 370px;
+}
+.add__name{
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+.add__desc{
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.7;
+    margin-bottom: 13px;
+}
+.dollar{
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    margin-bottom: 11px;
+    color: #F6762C;
+    font-size: 23px;
+}
+.ebaksov{
+opacity:0.7;
+text-decoration: line-through;
+font-size: 19px;
+}
+
+     /*mega burger end*/
+       /*mega cafes start*/
+       .cafes{
+        margin-bottom: 150px;
+       }
+.cafes .wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 30px 30px;
+}
+.cafes__text{
+    width: 260px;
+    margin-left: 50px;
+}
+.cafes__card-1{
+    width:550px;
+    height: 300px;
+    background-image: url(../img/product-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+justify-content: flex-end;
+align-items: center;
+   
+}
+.cafes__card-2{
+    width:550px;
+    height: 300px;
+    background-image: url(../img/product-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.cafes__card-3{
+    width:550px;
+    height: 300px;
+    background-image: url(../img/product-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.cafes__card-4{
+    width:550px;
+    height: 300px;
+    background-image: url(../img/product-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.cafes__name{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.cafes__desc{
+    font-size: 16px;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+         /*mega cafes end*/
+           /*person start*/
+.person{
+    margin:0 auto;
+    height: 360px;
+    width: 850px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 190px;
+}
+.text__person{
+    
+}
+.text__img{
+    margin-bottom: 40px;
+    margin-left: 150px;
+}
+.person__desc{
+    width: 360px;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.7;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.person__name{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+.person__american{
+    font-size: 12px;
+opacity: 0.7;
+font-weight: 300;
+text-align: center;
+}
+             /*person end*/
+              /*line start*/
+.line{
+    width: 100vw;
+    height: 170px;
+    background-color: #312F30;
+    margin-bottom: 90px;
+}
+.line__wrapper{
+    height: 170px;
+    margin: 0 auto;
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.line__menu{
+    font-size: 40px;
+    font-weight: 500;
+}
+/*line end*/
+/*contact start*/
+.contact{
+    margin-bottom: 140px;
+}
+       .contact .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 1120px;
+        height: 160px;
+       }  
+       .contact li{
+        margin-bottom: 14px;
+       }  
+.mail{
+    display: flex;
+    flex-wrap: wrap;
+    width: 160px;
+   gap:10px;
+   align-items: center;
+}
+.www{
+margin-top: -10px;
+}
+.gmail__text{
+font-size: 12px;
+font-weight: 400;
+margin-bottom: 10px;
+
+}
+.logo{
+    margin-bottom: 30px;
+}
+.table__title{
+    font-size: 16px;
+    font-weight: 500;
+}
+.table__text{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+/*contact end*/
